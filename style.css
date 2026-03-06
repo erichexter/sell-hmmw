@@ -105,8 +105,16 @@ h2::after {
 .tagline {
   font-size: 1.25rem;
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-style: italic;
+}
+
+.hero-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
 }
 
 /* ===== Button ===== */
@@ -169,6 +177,67 @@ h2::after {
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-muted);
+}
+
+.description-text p {
+  margin-bottom: 1.25rem;
+}
+
+.feature-list {
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.feature-list li {
+  padding: 0.35rem 0;
+  color: var(--text-primary);
+}
+
+.feature-list li::before {
+  content: '\2713';
+  color: var(--olive);
+  font-weight: 700;
+  margin-right: 0.75rem;
+}
+
+/* ===== Trades Box ===== */
+.trades-box {
+  max-width: 550px;
+  margin: 2.5rem auto 0;
+  padding: 1.5rem 2rem;
+  background: rgba(74, 90, 43, 0.15);
+  border: 1px solid var(--olive);
+  text-align: center;
+}
+
+.trades-box h3 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.trades-box ul {
+  list-style: none;
+  margin-bottom: 0.75rem;
+}
+
+.trades-box ul li {
+  padding: 0.3rem 0;
+  color: var(--text-primary);
+}
+
+.trades-box ul li::before {
+  content: '\2022';
+  color: var(--olive);
+  margin-right: 0.5rem;
+}
+
+.trades-note {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 /* ===== Gallery ===== */
@@ -277,6 +346,17 @@ h2::after {
   color: var(--accent);
   min-width: 90px;
   display: inline-block;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--olive);
+  transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: var(--accent-hover);
 }
 
 /* ===== Footer ===== */
