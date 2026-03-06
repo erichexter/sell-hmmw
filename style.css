@@ -76,11 +76,9 @@ h2::after {
   justify-content: center;
   text-align: center;
   background: var(--bg-darker);
-  /* Replace with your hero image:
-     background-image: url('images/hero.jpg');
-     background-size: cover;
-     background-position: center;
-  */
+  background-image: url('media/DSC02460.JPG');
+  background-size: cover;
+  background-position: center;
   border-bottom: 4px solid var(--olive);
 }
 
@@ -288,10 +286,13 @@ h2::after {
   overflow: hidden;
 }
 
-.video-item iframe {
+.video-item iframe,
+.video-item video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border: none;
+  background: #000;
 }
 
 .video-item.placeholder {
