@@ -360,6 +360,261 @@ h2::after {
   color: var(--accent-hover);
 }
 
+/* ===== Section Subtitle ===== */
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== TMU Note ===== */
+.tmu-note {
+  max-width: 650px;
+  margin: 2rem auto 0;
+  padding: 1.25rem 1.75rem;
+  background: rgba(181, 136, 62, 0.1);
+  border: 1px solid var(--accent);
+  text-align: center;
+}
+
+.tmu-note h3 {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tmu-note p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== Technical Specs Tables ===== */
+.specs-table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.specs-table-card {
+  background: var(--bg-section);
+  border-left: 3px solid var(--olive);
+  padding: 1.5rem;
+}
+
+.specs-table-card h3 {
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.specs-table td {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.specs-table td:first-child {
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding-right: 1.5rem;
+  width: 40%;
+}
+
+.specs-table td:last-child {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ===== What to Know Grid ===== */
+.know-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.know-card {
+  background: var(--bg-section);
+  padding: 1.5rem;
+  border-left: 3px solid var(--olive);
+}
+
+.know-card h3 {
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.know-card ul {
+  list-style: none;
+}
+
+.know-card ul li {
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.know-card ul li::before {
+  content: '\2022';
+  color: var(--olive);
+  margin-right: 0.6rem;
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--bg-section);
+  padding: 0;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 1.1rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-weight: 300;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+  content: '\2212';
+}
+
+.faq-item summary:hover {
+  color: var(--accent);
+}
+
+.faq-item p {
+  padding: 0 0 1.25rem 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== Market Context ===== */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.market-card {
+  background: var(--bg-section);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.market-card h3 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.market-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.market-card ul {
+  list-style: none;
+  text-align: left;
+}
+
+.market-card ul li {
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.market-card ul li::before {
+  content: '\2022';
+  color: var(--olive);
+  margin-right: 0.5rem;
+}
+
+.market-card-highlight {
+  border: 2px solid var(--olive);
+  background: rgba(74, 90, 43, 0.1);
+}
+
+.market-card-highlight h3 {
+  color: var(--accent);
+}
+
+.highlight-price {
+  color: var(--accent) !important;
+  font-size: 2rem !important;
+}
+
+/* ===== Shipping ===== */
+.shipping-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.shipping-card {
+  background: var(--bg-section);
+  padding: 1.5rem;
+  border-left: 3px solid var(--olive);
+}
+
+.shipping-card h3 {
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.shipping-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
@@ -382,5 +637,17 @@ footer {
 
   .specs-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specs-table-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .know-grid {
+    grid-template-columns: 1fr;
   }
 }
